@@ -3,7 +3,7 @@ package struct_acm;
 import java.util.Scanner;
 
 /**
- * 队列-循环数组实现
+ * 队列-循环数组实现-test
  * 1-》2-》3-》null
  */
 public class ArrayQueue<T> {
