@@ -42,7 +42,6 @@ public class CircleLinked {
         if (first == null) {
             first = node;
             first.next = first;
-            size++;
         } else {
             Boy cur = first;
             while (cur.next != first) {
@@ -50,8 +49,8 @@ public class CircleLinked {
             }
             cur.next = node;
             node.next = first;
-            size++;
         }
+        size++;
     }
 
     /**
