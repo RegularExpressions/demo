@@ -232,6 +232,9 @@ public class SingleLinkedList implements ISingleLinked {
         return count;
     }
 
+    /**
+     * 反转单链表1 -- 创建一个新头节点，遍历原单链表，将各个元素采用头插法插入新头节点，最后再将原头节点指向已反转的链表即可
+     */
     @Override
     public void reverse1() {
         HeroNode cur = head.getNext();
@@ -250,6 +253,9 @@ public class SingleLinkedList implements ISingleLinked {
         head.setNext(reHead.getNext());
     }
 
+    /**
+     * 反转单链表2 -- 建立三个临时变量，遍历单链表时分别指向当前节点（cur），相对当前节点的前一个节点（pre），相对当前节点的后一个节点（next）
+     */
     @Override
     public void reverse2() {
         HeroNode cur = head.getNext();
