@@ -1,4 +1,4 @@
-package struct_acm;
+package struct_acm.queue;
 
 import java.util.Scanner;
 
