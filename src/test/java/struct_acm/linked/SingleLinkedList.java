@@ -1,4 +1,4 @@
-package struct_acm;
+package struct_acm.linked;
 
 import java.util.Stack;
 

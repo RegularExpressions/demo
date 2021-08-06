@@ -1,6 +1,6 @@
 package cp;
 
-import struct_acm.IDoubleLinked;
+import struct_acm.linked.IDoubleLinked;
 
 public class DoubleLinked implements IDoubleLinked {
 
