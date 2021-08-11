@@ -1,6 +1,8 @@
 package struct_acm.stack;
 
 /**
+ * 中缀表达式
+ *
  * 利用栈完成简单的计算器，两个栈实现，一个存储数字，一个存储操作符，思路如下：
  * 1.通过一个index值（索引），遍历我们的表达式
  * 2.如果发现是一个数字，直接入栈；
@@ -17,7 +19,7 @@ package struct_acm.stack;
  * 缺陷如下：
  *   8-2*2-2+2-4运算结果不对 对应数栈（从栈顶开始） 4=>4=>8 操作栈 - => -
  */
-public class Calculator {
+public class MidCalculator {
 
     public static void main(String[] args) {
         String expression = "7*2*2-5+1-5+3-4";
