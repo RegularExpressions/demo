@@ -1,16 +1,14 @@
 package struct_acm.stack;
 
-import com.google.common.base.Splitter;
 import com.google.common.collect.Lists;
 import org.apache.commons.collections4.CollectionUtils;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Stack;
 
 /**
- * 后缀表达式 计算器运算实现
+ * 后缀表达式 计算器运算实现（只支持正整数运算）
  */
 public class AfterExpressCalculate {
     public static void main(String[] args) {
