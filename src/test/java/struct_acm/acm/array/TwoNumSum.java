@@ -1,4 +1,4 @@
-package struct_acm.acm;
+package struct_acm.acm.array;
 
 import java.util.HashMap;
 import java.util.Map;

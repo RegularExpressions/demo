@@ -1,4 +1,4 @@
-package struct_acm.acm;
+package struct_acm.acm.array;
 
 import java.util.PriorityQueue;
 
@@ -17,9 +17,12 @@ import java.util.PriorityQueue;
 public class KminNum {
 
     public static void main(String[] args) {
-        int k = 5;
-        int[] arr = new int[]{4, 5, 1, 6, 2, 7, 3, 8};
-        solve3(arr,k);
+        int k = 10;
+        int[] arr = new int[]{0,0,2,3,2,1,1,2,0,4};
+        solve3(arr,k-1);
+        for (int i =0;i<k;i++){
+            System.out.println(arr[i]);
+        }
     }
 
     private static void solve1(int[] arr,int k){
@@ -29,7 +32,7 @@ public class KminNum {
         }
 
         for (int i =k;i<arr.length;i++){
-            if(queue.peek() > arr[i]){
+            if(!queue.isEmpty() && queue.peek() > arr[i]){
                 queue.poll();
                 queue.offer(arr[i]);
             }
@@ -87,9 +90,6 @@ public class KminNum {
         int i = partSearch(arr,start,end);
 
         if(i==k){
-            for (int loop=0;loop<k;loop++){
-                System.out.println(arr[loop]);
-            }
         }else if(i<k){
             quickSearch(arr, i + 1, end, k);
         }else {
