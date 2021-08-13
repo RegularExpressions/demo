@@ -105,7 +105,7 @@ public class SearchMidNum {
             if(aStart<aLen && (bStart>=bLen || nums1[aStart] < nums2[bStart])){
                 right = nums1[aStart++];
             }else {
-                right = nums2[bStart];
+                right = nums2[bStart++];
             }
         }
 
